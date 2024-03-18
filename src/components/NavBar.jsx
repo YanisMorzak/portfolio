@@ -17,7 +17,7 @@ export default function NavBar() {
 }
 
 const NavBarStyled = styled.div`
-  height: 100px;
+  height: 10vh;
   padding: 10px 5% 10px 20px;
   display: flex;
   justify-content: space-between;
