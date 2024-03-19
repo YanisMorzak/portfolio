@@ -8,6 +8,19 @@ export default function Contact() {
         <div className="row">
           <div className="contact-left">
             <h1 className="title-contact">Contact Me</h1>
+            <p>morzak78@gmail.com</p>
+            <p>07.77.76.34.09</p>
+            <div className="social-icons">
+              <a href="https://github.com/YanisMorzak" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yanis-morzak/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
           </div>
           <div className="contact-right"></div>
         </div>
