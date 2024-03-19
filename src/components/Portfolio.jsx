@@ -58,6 +58,7 @@ export default function Portfolio() {
 const PortfolioStyled = styled.div`
   padding: 50px 10%;
   .title-work {
+    font-size: 42px;
     margin-bottom: 20px;
   }
   .work-list {

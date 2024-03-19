@@ -145,6 +145,7 @@ const AboutStyled = styled.div`
         flex-basis: 60%;
         height: 100%;
         .sub-title {
+          font-size: 42px;
           margin-bottom: 15px;
         }
         .tab-titles {

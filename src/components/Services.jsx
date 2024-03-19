@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <ServicesStyled>
       <div id="services" className="services">
-        <h1>My Services</h1>
+        <h1 className="title-services">My Services</h1>
         <div className="services-list">
           <div>
             <i className="fa-solid fa-code"></i>
@@ -66,6 +66,9 @@ export default function Services() {
 
 const ServicesStyled = styled.div`
   padding: 0 10%;
+  .title-services {
+    font-size: 42px;
+  }
   .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
