@@ -9,20 +9,20 @@ export default function Contact() {
           <div className="contact-left">
             <h1 className="title-contact">Contact Me</h1>
             <p>
-              <i class="fa-solid fa-paper-plane"></i> morzak78@gmail.com
+              <i className="fa-solid fa-paper-plane"></i> morzak78@gmail.com
             </p>
             <p>
-              <i class="fa-solid fa-phone-flip"></i> 07.77.76.34.09
+              <i className="fa-solid fa-phone-flip"></i> 07.77.76.34.09
             </p>
             <div className="social-icons">
               <a href="https://github.com/YanisMorzak" target="_blank">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/yanis-morzak/"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
             <a
@@ -34,7 +34,7 @@ export default function Contact() {
             </a>
           </div>
           <div className="contact-right">
-            <form>
+            <form className="form">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="text"
@@ -47,7 +47,9 @@ export default function Contact() {
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit" className="btn-form">
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -111,8 +113,40 @@ const ContactStyled = styled.div`
       }
     }
     .contact-right {
-      flex-basis: 45%;
-      border: 1px solid blue;
+      flex-basis: 60%;
+
+      .btn-form {
+        display: inline-block;
+        cursor: pointer;
+        margin: 20px auto;
+        width: fit-content;
+        background: #3d4143;
+        border: 1px solid #3d4143;
+        color: white;
+        font-size: 15px;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.5s;
+        &:hover {
+          background: #f5f5f7;
+          color: #3d4143;
+          border: 1px solid #3d4143;
+        }
+      }
+      .form {
+        width: 100%;
+
+        input,
+        textarea {
+          width: 100%;
+          border: 0;
+          outline: none;
+          padding: 15px;
+          margin: 10px 0;
+          border-radius: 6px;
+        }
+      }
     }
   }
 `;
