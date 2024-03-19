@@ -1,9 +1,16 @@
 import React from "react";
+import styled from "styled-components";
 
 export default function Portfolio() {
   return (
-    <div>
-      <div id="portfolio">Portfolio</div>
-    </div>
+    <PortfolioStyled>
+      <div id="portfolio">
+        <h1>Portfolio</h1>
+      </div>
+    </PortfolioStyled>
   );
 }
+
+const PortfolioStyled = styled.div`
+  padding: 0 10%;
+`;

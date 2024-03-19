@@ -59,7 +59,7 @@ export default function Services() {
 }
 
 const ServicesStyled = styled.div`
-  padding: 0 60px;
+  padding: 0 10%;
   .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
