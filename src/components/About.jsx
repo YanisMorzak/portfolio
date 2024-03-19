@@ -120,11 +120,11 @@ export default function About() {
 
 const AboutStyled = styled.div`
   .about {
-    height: 80vh;
-    padding: 20px;
+    height: 700px;
+    padding: 30px 60px;
 
     .row {
-      height: 80%;
+      height: 90%;
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
@@ -133,6 +133,7 @@ const AboutStyled = styled.div`
       .col-1 {
         border: 1px solid purple;
         flex-basis: 35%;
+        height: 100%;
 
         img {
           width: 100%;
@@ -142,6 +143,7 @@ const AboutStyled = styled.div`
       .col-2 {
         border: 1px solid pink;
         flex-basis: 60%;
+        height: 100%;
         .sub-title {
           margin-bottom: 15px;
         }
