@@ -16,7 +16,9 @@ export default function NavBar() {
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li>Contact</li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </NavBarStyled>
   );
