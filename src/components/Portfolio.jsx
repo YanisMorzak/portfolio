@@ -41,7 +41,10 @@ export default function Portfolio() {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Excepturi et veritatis sapiente facere.
               </p>
-              <a href="">
+              <a
+                href="https://main--crypto-app-market.netlify.app/"
+                target="_blank"
+              >
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -66,10 +69,58 @@ const PortfolioStyled = styled.div`
     .work {
       position: relative;
       overflow: hidden;
+      &:hover .layer {
+        height: 100%;
+      }
+
       img {
         width: 100%;
         border-radius: 10px;
         display: block;
+      }
+      .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), #242729);
+        color: white;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        text-align: center;
+        font-size: 15px;
+        transition: height 0.5s;
+
+        h3 {
+          font-weight: 500;
+          margin: 20px 0;
+        }
+        a {
+          margin-top: 20px;
+          padding: 10px;
+          border-radius: 50%;
+          text-decoration: none;
+          font-size: 18px;
+          color: #3d4143;
+          background: white;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.4s;
+
+          &:hover {
+            color: white;
+            background: #121213;
+          }
+        }
       }
     }
   }
