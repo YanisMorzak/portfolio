@@ -13,7 +13,9 @@ export default function NavBar() {
         <li>
           <a href="#services">Services</a>
         </li>
-        <li>Portfolio</li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
         <li>Contact</li>
       </ul>
     </NavBarStyled>
