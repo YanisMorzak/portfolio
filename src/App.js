@@ -1,15 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./components/About";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <div>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Header />} />
-      </Routes>
-    </BrowserRouter>
+      <Header />
+      <About />
+    </div>
   );
 }
