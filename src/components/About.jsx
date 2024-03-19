@@ -18,13 +18,18 @@ export default function About() {
           <div className="col-2">
             <h1 className="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              eligendi ut illum optio neque dolor veritatis consequatur quam
-              provident quod doloremque ab magni dignissimos nulla rerum, magnam
-              aspernatur sunt harum. Et totam corrupti, porro illum
-              reprehenderit aliquam iusto sapiente molestias repellat sint eos?
-              Tenetur sit facere eum omnis, blanditiis laborum quasi hic
-              quisquam libero dolorem dolorum. Iure sequi quis repellendus?
+              Passionné par la création d'expériences web interactives et
+              conviviales, je suis spécialisé dans le développement front-end,
+              sur React.js, une bibliothèque JavaScript moderne et puissante me
+              permettant de construire des interfaces utilisateur dynamiques et
+              réactives. <br />
+              <br />
+              Je suis constamment en train d'apprendre et de m'améliorer,
+              explorant de nouvelles technologies et cherchant à rester à jour
+              avec les tendances émergentes du développement web. Mon objectif
+              est de contribuer de manière significative à des projets innovants
+              et stimulants, tout en continuant à élargir mes compétences et à
+              relever de nouveaux défis.
             </p>
             <div className="tab-titles">
               <div
@@ -62,23 +67,28 @@ export default function About() {
                   </li>
                   <li>
                     <span>Acquisition</span>
-                    <br /> Search Engine Optimisation
+                    <br /> Search Engine Optimization
                   </li>
                 </ul>
               )}
               {activeTab === "experience" && (
                 <ul>
                   <li>
-                    <span> Projet React - App Tasty Burger</span>
+                    <span> 2023 - Today / Projet React - App Tasty Burger</span>
                     <br /> Stack technique : React / Styled Components / API
                     Context / Git / Vercel
                   </li>
                   <li>
-                    <span>Projet React - App Crypto Market</span>
-                    <br /> Stack technique : React / Redux / SCSS
+                    <span>2024 / Projet React - App Clone Amazon</span>
+                    <br /> Stack technique : React / Redux / Styled-Components /
+                    Git / Vercel
                   </li>
                   <li>
-                    <span>Alternance Webmaster, Orange</span>
+                    <span>2023 / Projet React - App Crypto Market</span>
+                    <br /> Stack technique : React / Redux / SCSS / Netlify
+                  </li>
+                  <li>
+                    <span>2021 - 2023 / Alternance Webmaster, Orange</span>
                     <br /> Stack technique : CMS Moringa, Javascript, HTML, CSS
                   </li>
                 </ul>
@@ -88,16 +98,15 @@ export default function About() {
                   <li>
                     <span>
                       {" "}
-                      Master Informatique at Paris School of Business{" "}
+                      2023 - Master Degree in IT at Paris School of Business{" "}
                     </span>
                     <br />
                     Matières : Javascript / PHP / Scrum / SEO Search Engine
-                    Optimization / Wordpress / Stratégie de contenu web / Google
-                    Analytics + Certification Google Analytics / SQL
+                    Optimization / Wordpress / Google Analytics + Certification
+                    Google Analytics / SQL
                   </li>
                   <li>
-                    <span>Bac S</span>
-                    <br /> React JS
+                    <span>2018 - Science Baccalaureate</span>
                   </li>
                 </ul>
               )}
