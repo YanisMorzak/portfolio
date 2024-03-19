@@ -14,6 +14,8 @@ export default function Services() {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores saepe soluta sed non, vel nobis magnam architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores saepe soluta sed non, vel nobis magnam architecto.
             </p>
             <a
               href="https://github.com/YanisMorzak?tab=repositories"
@@ -29,6 +31,8 @@ export default function Services() {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores saepe soluta sed non, vel nobis magnam architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores saepe soluta sed non, vel nobis magnam architecto.
             </p>
             <a
               href="https://github.com/YanisMorzak?tab=repositories"
@@ -42,6 +46,8 @@ export default function Services() {
             <h2>Acquisition</h2>
 
             <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores saepe soluta sed non, vel nobis magnam architecto.
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores saepe soluta sed non, vel nobis magnam architecto.
             </p>
@@ -64,7 +70,7 @@ const ServicesStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
     grid-gap: 40px;
-    margin: 50px 0;
+    margin: 50px 0 10px;
     justify-content: center;
     align-items: center;
 
