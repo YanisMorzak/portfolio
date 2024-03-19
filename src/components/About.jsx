@@ -121,7 +121,7 @@ export default function About() {
 const AboutStyled = styled.div`
   .about {
     height: 700px;
-    padding: 30px 60px;
+    padding: 30px 10%;
 
     .row {
       height: 90%;
