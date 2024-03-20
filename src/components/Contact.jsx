@@ -71,6 +71,9 @@ const ContactStyled = styled.div`
     flex-wrap: wrap;
     .contact-left {
       flex-basis: 35%;
+      @media screen and (max-width: 900px) {
+        flex-basis: 100%;
+      }
 
       p {
         margin-top: 20px;
@@ -115,6 +118,9 @@ const ContactStyled = styled.div`
     }
     .contact-right {
       flex-basis: 60%;
+      @media screen and (max-width: 900px) {
+        flex-basis: 100%;
+      }
 
       .btn-form {
         display: inline-block;
