@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function NavBar() {
-  // Définir l'état initial du menu à fermé
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Fonction pour ouvrir le menu
@@ -18,9 +17,11 @@ export default function NavBar() {
   return (
     <NavBarStyled>
       <img src="/image/logo-Portfolio-1.png" alt="logo" className="logo" />
-      {/* Utilisation de l'opérateur ternaire pour afficher la classe "open" si le menu est ouvert */}
+      {/* Utilisation d'une ternaire pour afficher la classe "open" si le menu est ouvert */}
       <ul className={`list ${menuOpen ? "open" : ""}`}>
-        <li>Home</li>
+        <li>
+          <a href="#">Home</a>
+        </li>
         <li>
           <a href="#about">About</a>
         </li>
@@ -48,12 +49,11 @@ const NavBarStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   .logo {
     height: 90%;
   }
   .list {
-    border: 1px solid orange;
     position: relative;
     list-style: none;
     z-index: 60;
@@ -66,7 +66,6 @@ const NavBarStyled = styled.div`
       width: 200px;
       height: 100vh;
       padding-top: 50px;
-      /* Utilisation de la transition pour l'ouverture et la fermeture du menu */
       transition: right 0.5s;
     }
 
