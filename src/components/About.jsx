@@ -74,17 +74,17 @@ export default function About() {
               {activeTab === "experience" && (
                 <ul>
                   <li>
-                    <span> 2023 - Today / Projet React - App Tasty Burger</span>
+                    <span> 2023 - Today / App Tasty Burger</span>
                     <br /> Stack technique : React / Styled Components / API
                     Context / Git / Vercel
                   </li>
                   <li>
-                    <span>2024 / Projet React - App Clone Amazon</span>
+                    <span>2024 / App Clone Amazon</span>
                     <br /> Stack technique : React / Redux / Styled-Components /
                     Git / Vercel
                   </li>
                   <li>
-                    <span>2023 / Projet React - App Crypto Market</span>
+                    <span>2023 / App Crypto Market</span>
                     <br /> Stack technique : React / Redux / SCSS / Netlify
                   </li>
                   <li>
@@ -126,6 +126,9 @@ const AboutStyled = styled.div`
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @media screen and (max-width: 750px) {
+        display: block;
+      }
 
       .col-1 {
         border: 1px solid purple;
@@ -133,6 +136,7 @@ const AboutStyled = styled.div`
         height: 100%;
         @media screen and (max-width: 750px) {
           visibility: hidden;
+          height: 0;
         }
 
         img {
