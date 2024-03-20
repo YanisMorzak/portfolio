@@ -10,9 +10,7 @@ export default function Header() {
           Hi, I'm <span className="name">Yanis</span>
         </h1>
       </div>
-      <div className="right">
-        <img src="/image/profil.png" alt="" className="img-profile" />
-      </div>
+      <div className="right"></div>
     </HeaderStyled>
   );
 }
@@ -22,7 +20,7 @@ const HeaderStyled = styled.div`
   border: 1px solid red;
   padding-left: 10%;
   display: grid;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 45% 1fr;
 
   .left {
     font-size: 28px;
@@ -37,8 +35,9 @@ const HeaderStyled = styled.div`
 
   .right {
     border: 1px solid green;
-    display: flex;
-    justify-content: right;
-    align-items: end;
+    width: 100%;
+    background-image: url("/image/profil.png");
+    background-size: cover;
+    background-position: center;
   }
 `;

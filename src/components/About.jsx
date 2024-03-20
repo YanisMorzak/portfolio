@@ -120,11 +120,8 @@ export default function About() {
 
 const AboutStyled = styled.div`
   .about {
-    height: 700px;
     padding: 30px 10%;
-
     .row {
-      height: 90%;
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
@@ -134,6 +131,9 @@ const AboutStyled = styled.div`
         border: 1px solid purple;
         flex-basis: 35%;
         height: 100%;
+        @media screen and (max-width: 750px) {
+          visibility: hidden;
+        }
 
         img {
           width: 100%;
@@ -143,7 +143,10 @@ const AboutStyled = styled.div`
       .col-2 {
         border: 1px solid pink;
         flex-basis: 60%;
-        height: 100%;
+
+        @media screen and (max-width: 750px) {
+          width: 100%;
+        }
         .sub-title {
           font-size: 42px;
           margin-bottom: 15px;
@@ -168,6 +171,9 @@ const AboutStyled = styled.div`
               bottom: -6px;
               left: 0;
               transition: 0.5s;
+            }
+            @media screen and (max-width: 750px) {
+              margin-right: 20px;
             }
           }
           .tab-links.active::after {
