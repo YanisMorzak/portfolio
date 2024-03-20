@@ -9,6 +9,9 @@ export default function Header() {
         <h1 className="title">
           Hi, I'm <span className="name">Yanis</span>
         </h1>
+        <a href="/image/CV_YANIS_MORZAK.pdf" download className="btn-contact">
+          Download CV
+        </a>
       </div>
       <div className="right"></div>
     </HeaderStyled>
@@ -17,10 +20,10 @@ export default function Header() {
 
 const HeaderStyled = styled.div`
   height: 90vh;
-  border: 1px solid red;
   padding-left: 10%;
   display: grid;
   grid-template-columns: 45% 1fr;
+  grid-column-gap: 20px;
   @media screen and (max-width: 550px) {
     grid-template-columns: 1fr;
     padding-top: 20%;
@@ -61,6 +64,24 @@ const HeaderStyled = styled.div`
       }
       @media screen and (max-width: 630px) {
         font-size: 38px;
+      }
+    }
+    .btn-contact {
+      display: inline-block;
+      font-size: 19px;
+      margin-top: 30px;
+      width: fit-content;
+      background: #3d4143;
+      border: 1px solid #3d4143;
+      color: white;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.5s;
+      &:hover {
+        background: #f5f5f7;
+        color: #3d4143;
+        border: 1px solid #3d4143;
       }
     }
   }
