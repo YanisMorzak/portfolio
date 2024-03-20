@@ -21,6 +21,11 @@ const HeaderStyled = styled.div`
   padding-left: 10%;
   display: grid;
   grid-template-columns: 45% 1fr;
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 1fr;
+    padding-top: 20%;
+    text-align: center;
+  }
 
   .left {
     font-size: 28px;
@@ -28,16 +33,46 @@ const HeaderStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+    @media screen and (max-width: 1000px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width: 850px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 730px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 630px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 21px;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 18px;
+    }
     .title {
       font-size: 60px;
+      @media screen and (max-width: 1000px) {
+        font-size: 46px;
+      }
+      @media screen and (max-width: 730px) {
+        font-size: 42px;
+      }
+      @media screen and (max-width: 630px) {
+        font-size: 38px;
+      }
     }
   }
 
   .right {
-    border: 1px solid green;
-    width: 100%;
+    height: 100%;
     background-image: url("/image/profil.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    @media screen and (max-width: 550px) {
+      visibility: hidden;
+    }
   }
 `;
