@@ -113,8 +113,12 @@ export default function Contact() {
 
 const ContactStyled = styled.div`
   padding: 0 10%;
+  color: #ecebe7;
+
   .title-contact {
-    font-size: 42px;
+    font-size: 50px;
+    font-family: "Rastefani";
+    font-weight: 500;
     margin-bottom: 30px;
   }
   .row {
@@ -153,6 +157,7 @@ const ContactStyled = styled.div`
       }
       .btn-contact {
         display: inline-block;
+        font-family: "Rastefani";
         margin: 50px auto;
         width: fit-content;
         background: #3d4143;
@@ -177,6 +182,7 @@ const ContactStyled = styled.div`
 
       .btn-form {
         display: inline-block;
+        font-family: "Rastefani";
         cursor: pointer;
         margin: 20px auto;
         width: fit-content;
