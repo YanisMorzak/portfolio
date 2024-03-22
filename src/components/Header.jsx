@@ -24,7 +24,7 @@ const HeaderStyled = styled.div`
   display: grid;
   grid-template-columns: 45% 1fr;
   grid-column-gap: 20px;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 700px) {
     grid-template-columns: 1fr;
     padding-top: 20%;
     text-align: center;
@@ -32,32 +32,56 @@ const HeaderStyled = styled.div`
 
   .left {
     font-size: 28px;
+    font-family: "Rastefani";
+    letter-spacing: 1px;
+    color: #ecebe7;
+
+    font-weight: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1160px) {
       font-size: 24px;
     }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1015px) {
       font-size: 20px;
     }
-    @media screen and (max-width: 730px) {
+    @media screen and (max-width: 850px) {
       font-size: 18px;
     }
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 780px) {
       font-size: 15px;
+    }
+    @media screen and (max-width: 660px) {
+      font-size: 13px;
     }
     @media screen and (max-width: 550px) {
       font-size: 21px;
     }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 420px) {
       font-size: 18px;
     }
+    @media screen and (max-width: 350px) {
+      font-size: 15px;
+    }
     .title {
-      font-size: 60px;
-      @media screen and (max-width: 1000px) {
-        font-size: 46px;
+      font-size: 100px;
+      font-weight: 700;
+
+      @media screen and (max-width: 1350px) {
+        font-size: 85px;
+      }
+      @media screen and (max-width: 1160px) {
+        font-size: 75px;
+      }
+      @media screen and (max-width: 1035px) {
+        font-size: 70px;
+      }
+      @media screen and (max-width: 970px) {
+        font-size: 65px;
+        margin-top: 10px;
+        line-height: 90px;
       }
       @media screen and (max-width: 730px) {
         font-size: 42px;
@@ -88,11 +112,12 @@ const HeaderStyled = styled.div`
 
   .right {
     height: 100%;
-    background-image: url("/image/profil.png");
+    margin-top: 5px;
+    background-image: url("/image/img-profile-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 700px) {
       visibility: hidden;
     }
   }
