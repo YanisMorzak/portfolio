@@ -8,7 +8,7 @@ export default function Portfolio() {
         <h1 className="title-work">My Work</h1>
         <div className="work-list">
           <div className="work">
-            <img src="/image/work-1.png" />
+            <img src="/image/tasty-burger-work.png" />
             <div className="layer">
               <h3>Tasty App</h3>
               <p>
@@ -21,20 +21,23 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="work">
-            <img src="/image/work-2.png" />
+            <img src="/image/amz-clo-work.png" />
             <div className="layer">
               <h3>Clone Amazon App</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Excepturi et veritatis sapiente facere.
               </p>
-              <a href="">
+              <a
+                href="https://amazon-clone-yanismorzak-yanis-projects-cb43cffb.vercel.app?_vercel_share=i2XE7n1xJfA94Kqd556sTx76icUe39kz"
+                target="_blank"
+              >
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
           <div className="work">
-            <img src="/image/work-3.png" />
+            <img src="/image/crp-img-work.png" />
             <div className="layer">
               <h3>Crypto Market App</h3>
               <p>
