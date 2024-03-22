@@ -58,16 +58,19 @@ export default function About() {
                 <ul>
                   <li>
                     <span>Web development</span>
-                    <br /> React JS / Redux / JS / Tailwind / Styled Components
-                    / Jest
+                    <br />{" "}
+                    <em>
+                      React JS / Redux / JS / Tailwind / Styled Components /
+                      Jest
+                    </em>
                   </li>
                   <li>
                     <span>UI/UX</span>
-                    <br /> Figma
+                    <br /> <em>Figma</em>
                   </li>
                   <li>
                     <span>Acquisition</span>
-                    <br /> Search Engine Optimization
+                    <br /> <em>Search Engine Optimization</em>
                   </li>
                 </ul>
               )}
@@ -75,21 +78,31 @@ export default function About() {
                 <ul>
                   <li>
                     <span> 2023 - Today / App Tasty Burger</span>
-                    <br /> Stack technique : React / Styled Components / API
-                    Context / Git / Vercel
+                    <br />{" "}
+                    <em>
+                      Stack technique : React / Styled Components / API Context
+                      / Git / Vercel
+                    </em>
                   </li>
                   <li>
                     <span>2024 / App Clone Amazon</span>
-                    <br /> Stack technique : React / Redux / Styled-Components /
-                    Git / Vercel
+                    <br />{" "}
+                    <em>
+                      Stack technique : React / Redux / Styled-Components / Git
+                      / Vercel
+                    </em>
                   </li>
                   <li>
                     <span>2023 / App Crypto Market</span>
-                    <br /> Stack technique : React / Redux / SCSS / Netlify
+                    <br />{" "}
+                    <em>Stack technique : React / Redux / SCSS / Netlify</em>
                   </li>
                   <li>
                     <span>2021 - 2023 / Alternance Webmaster, Orange</span>
-                    <br /> Stack technique : CMS Moringa, Javascript, HTML, CSS
+                    <br />{" "}
+                    <em>
+                      Stack technique : CMS Moringa, Javascript, HTML, CSS
+                    </em>
                   </li>
                 </ul>
               )}
@@ -101,9 +114,11 @@ export default function About() {
                       2023 - Master Degree in IT at Paris School of Business{" "}
                     </span>
                     <br />
-                    Matières : Javascript / PHP / Scrum / SEO Search Engine
-                    Optimization / Wordpress / Google Analytics + Certification
-                    Google Analytics / SQL
+                    <em>
+                      Matières : Javascript / PHP / Scrum / SEO Search Engine
+                      Optimization / Wordpress / Google Analytics +
+                      Certification Google Analytics / SQL
+                    </em>
                   </li>
                   <li>
                     <span>2018 - Science Baccalaureate</span>
@@ -121,6 +136,8 @@ export default function About() {
 const AboutStyled = styled.div`
   .about {
     padding: 30px 10%;
+    color: #ecebe7;
+
     .row {
       margin-top: 20px;
       display: flex;
@@ -131,7 +148,6 @@ const AboutStyled = styled.div`
       }
 
       .col-1 {
-        border: 1px solid purple;
         flex-basis: 35%;
         height: 100%;
         @media screen and (max-width: 750px) {
@@ -145,15 +161,16 @@ const AboutStyled = styled.div`
         }
       }
       .col-2 {
-        border: 1px solid pink;
         flex-basis: 60%;
 
         @media screen and (max-width: 750px) {
           width: 100%;
         }
         .sub-title {
-          font-size: 42px;
+          font-size: 50px;
           margin-bottom: 15px;
+          font-family: "Rastefani";
+          font-weight: 500;
         }
         .tab-titles {
           display: flex;
@@ -170,7 +187,7 @@ const AboutStyled = styled.div`
               content: "";
               height: 2px;
               width: 0;
-              background: #3d4143;
+              background: #9a803a;
               position: absolute;
               bottom: -6px;
               left: 0;
@@ -190,6 +207,7 @@ const AboutStyled = styled.div`
         }
         .tab-contents ul li span {
           font-weight: 500;
+          color: #9a803a;
         }
       }
     }
