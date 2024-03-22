@@ -6,7 +6,7 @@ export default function Copyright() {
 }
 const CopyrightStyled = styled.div`
   width: 100%;
-  background: #e4e4e4;
+  background: #3d4143;
   padding: 15px 0;
   text-align: center;
   font-weight: 300;

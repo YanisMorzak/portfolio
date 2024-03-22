@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    Name: "",
+    Email: "",
+    Message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxv8QXhmwTzbvUNWyhBF74hvPYkUWm91KQ0Ib85ENOQSgd5xR6YYuVG76VCJHFpB3GL/exec";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(e.target) })
+      .then((response) => {
+        console.log("Success!", response);
+        setSubmitted(true);
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 2000); // Attendre 2 secondes avant de réinitialiser submitted à false
+        setFormData({
+          Name: "",
+          Email: "",
+          Message: "",
+        });
+      })
+      .catch((error) => console.error("Error!", error.message));
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <ContactStyled>
       <div id="contact">
@@ -34,30 +69,48 @@ export default function Contact() {
             </a>
           </div>
           <div className="contact-right">
-            <form className="form">
-              <input type="text" name="Name" placeholder="Your Name" required />
+            <form
+              className="form"
+              name="submit-to-google-sheet"
+              onSubmit={handleSubmit}
+            >
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                value={formData.Name}
+                onChange={handleChange}
+                required
+              />
               <input
                 type="text"
                 name="Email"
                 placeholder="Your email"
+                value={formData.Email}
+                onChange={handleChange}
                 required
               />
               <textarea
                 name="Message"
                 rows="6"
                 placeholder="Your Message"
+                value={formData.Message}
+                onChange={handleChange}
               ></textarea>
               <button type="submit" className="btn-form">
                 Submit
               </button>
+              {submitted && (
+                <div className="submitted-message">Message sent!</div>
+              )}
             </form>
           </div>
         </div>
-        {/* <div className="copyright">Copyright</div> */}
       </div>
     </ContactStyled>
   );
 }
+
 const ContactStyled = styled.div`
   padding: 0 10%;
   .title-contact {
@@ -153,16 +206,15 @@ const ContactStyled = styled.div`
           margin: 10px 0;
           border-radius: 6px;
         }
+        .submitted-message {
+          background: #3d4143;
+          padding: 10px;
+          border-radius: 10px;
+          color: white;
+          width: 40%;
+          text-align: center;
+        }
       }
     }
   }
-  /* .copyright {
-    width: 100%;
-    background: #e4e4e4;
-    padding: 15px 0;
-    text-align: center;
-    font-weight: 300;
-    margin-top: 20px;
-    border-radius: 6px;
-  } */
 `;
