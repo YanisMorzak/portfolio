@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <NavBarStyled>
-      <img src="/image/logo-Portfolio-1.png" alt="logo" className="logo" />
+      <img src="/image/logo-prtfl.png" alt="logo" className="logo" />
       {/* Utilisation d'une ternaire pour afficher la classe "open" si le menu est ouvert */}
       <ul className={`list ${menuOpen ? "open" : ""}`}>
         <li>
@@ -59,7 +59,7 @@ const NavBarStyled = styled.div`
     z-index: 60;
     @media screen and (max-width: 650px) {
       background: #3d4143;
-      color: white;
+      color: #f7f7f7;
       position: fixed;
       top: 0;
       right: -200px;
@@ -93,7 +93,7 @@ const NavBarStyled = styled.div`
         width: 100%;
       }
       a {
-        color: #3d4143;
+        color: #ecebe7;
         @media screen and (max-width: 650px) {
           color: white;
         }
