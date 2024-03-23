@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <HeaderStyled>
       <div className="left">
-        <p>Développeur Front-End React JS</p>
+        <p>React JS front-end developer</p>
         <h1 className="title">
           Hi, I'm <span className="name">Yanis</span>
         </h1>

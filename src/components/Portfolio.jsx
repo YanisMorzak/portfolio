@@ -12,8 +12,8 @@ export default function Portfolio() {
             <div className="layer">
               <h3>Tasty App</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi et veritatis sapiente facere.
+                A culinary application offering a wide range of functions, with
+                an admin mode that lets you add, modify or delete any product.
               </p>
               <a href="">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
@@ -24,10 +24,7 @@ export default function Portfolio() {
             <img src="/image/amz-clo-work.png" />
             <div className="layer">
               <h3>Clone Amazon App</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi et veritatis sapiente facere.
-              </p>
+              <p>Amazon clone reconstructing visitors' path to purchase.</p>
               <a
                 href="https://amazon-clone-yanismorzak-yanis-projects-cb43cffb.vercel.app?_vercel_share=i2XE7n1xJfA94Kqd556sTx76icUe39kz"
                 target="_blank"
@@ -41,8 +38,8 @@ export default function Portfolio() {
             <div className="layer">
               <h3>Crypto Market App</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi et veritatis sapiente facere.
+                Responsive application showing an overview of the
+                crypto-currency market through various metrics.
               </p>
               <a
                 href="https://main--crypto-app-market.netlify.app/"
@@ -61,8 +58,11 @@ export default function Portfolio() {
 const PortfolioStyled = styled.div`
   padding: 50px 10%;
   .title-work {
-    font-size: 42px;
+    color: #ecebe7;
+    font-size: 50px;
     margin-bottom: 20px;
+    font-family: "Rastefani";
+    font-weight: 500;
   }
   .work-list {
     display: grid;
@@ -102,8 +102,12 @@ const PortfolioStyled = styled.div`
         transition: height 0.5s;
 
         h3 {
+          font-size: 21px;
           font-weight: 500;
           margin: 20px 0;
+        }
+        p {
+          font-size: 16px;
         }
         a {
           margin-top: 20px;
