@@ -114,6 +114,7 @@ const NavBarStyled = styled.div`
   }
   .fa-solid {
     display: none;
+    cursor: pointer;
     @media screen and (max-width: 650px) {
       display: block;
       font-size: 25px;
