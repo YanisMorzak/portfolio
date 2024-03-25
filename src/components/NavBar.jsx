@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Fonction pour ouvrir le menu
+  const handleOpenMenu = () => {
+    setMenuOpen(true);
+  };
+
+  // Fonction pour fermer le menu
+  const handleCloseMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <NavBarStyled>
-      <img src="/image/logo-Portfolio-1.png" alt="logo" className="logo" />
-      <ul className="list">
-        <li>Home</li>
+      <img src="/image/logo-prtfl.png" alt="logo" className="logo" />
+      {/* Utilisation d'une ternaire pour afficher la classe "open" si le menu est ouvert */}
+      <ul className={`list ${menuOpen ? "open" : ""}`}>
+        <li>
+          <a href="#">Home</a>
+        </li>
         <li>
           <a href="#about">About</a>
         </li>
@@ -19,7 +34,11 @@ export default function NavBar() {
         <li>
           <a href="#contact">Contact</a>
         </li>
+        {/* Ajout de l'icône de fermeture du menu avec un événement onClick pour appeler la fonction de fermeture du menu */}
+        <i className="fa-solid fa-xmark" onClick={handleCloseMenu}></i>
       </ul>
+      {/* Ajout de l'icône d'ouverture du menu avec un événement onClick pour appeler la fonction d'ouverture du menu */}
+      <i className="fa-solid fa-bars" onClick={handleOpenMenu}></i>
     </NavBarStyled>
   );
 }
@@ -30,13 +49,30 @@ const NavBarStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   .logo {
     height: 90%;
   }
   .list {
-    border: 1px solid orange;
+    position: relative;
     list-style: none;
+    z-index: 60;
+    @media screen and (max-width: 650px) {
+      background: #3d4143;
+      color: #f7f7f7;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      transition: right 0.5s;
+    }
+
+    /* Ajout de la classe "open" pour ouvrir le menu */
+    &.open {
+      right: 0;
+    }
 
     li {
       display: inline-block;
@@ -56,6 +92,31 @@ const NavBarStyled = styled.div`
       &:hover::after {
         width: 100%;
       }
+      a {
+        color: #ecebe7;
+        @media screen and (max-width: 650px) {
+          color: white;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        display: block;
+        margin: 25px;
+      }
+    }
+    .fa-xmark {
+      @media screen and (max-width: 650px) {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+  .fa-solid {
+    display: none;
+    @media screen and (max-width: 650px) {
+      display: block;
+      font-size: 25px;
     }
   }
 `;

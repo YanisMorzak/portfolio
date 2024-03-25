@@ -18,18 +18,16 @@ export default function About() {
           <div className="col-2">
             <h1 className="sub-title">About Me</h1>
             <p>
-              Passionné par la création d'expériences web interactives et
-              conviviales, je suis spécialisé dans le développement front-end,
-              sur React.js, une bibliothèque JavaScript moderne et puissante me
-              permettant de construire des interfaces utilisateur dynamiques et
-              réactives. <br />
+              Passionate about creating interactive and user-friendly web
+              experiences, I specialize in front-end development, using
+              React.js, a modern and powerful JavaScript library that enables me
+              to build dynamic and reactive user interfaces. <br />
               <br />
-              Je suis constamment en train d'apprendre et de m'améliorer,
-              explorant de nouvelles technologies et cherchant à rester à jour
-              avec les tendances émergentes du développement web. Mon objectif
-              est de contribuer de manière significative à des projets innovants
-              et stimulants, tout en continuant à élargir mes compétences et à
-              relever de nouveaux défis.
+              I'm constantly learning and improving, exploring new technologies
+              and seeking to keep up to date with emerging trends in web
+              development. My aim is to make a significant contribution to
+              innovative and stimulating projects, while continuing to broaden
+              my skills and take on new challenges.
             </p>
             <div className="tab-titles">
               <div
@@ -58,38 +56,51 @@ export default function About() {
                 <ul>
                   <li>
                     <span>Web development</span>
-                    <br /> React JS / Redux / JS / Tailwind / Styled Components
-                    / Jest
+                    <br />{" "}
+                    <em>
+                      React JS / Redux / JS / Tailwind / Styled Components / Git
+                      / Jest
+                    </em>
                   </li>
                   <li>
                     <span>UI/UX</span>
-                    <br /> Figma
+                    <br /> <em>Figma</em>
                   </li>
                   <li>
                     <span>Acquisition</span>
-                    <br /> Search Engine Optimization
+                    <br /> <em>Search Engine Optimization</em>
                   </li>
                 </ul>
               )}
               {activeTab === "experience" && (
                 <ul>
                   <li>
-                    <span> 2023 - Today / Projet React - App Tasty Burger</span>
-                    <br /> Stack technique : React / Styled Components / API
-                    Context / Git / Vercel
+                    <span> 2023 - Today / App Tasty Burger</span>
+                    <br />{" "}
+                    <em>
+                      Stack technique : React / Styled Components / API Context
+                      / Git / Vercel
+                    </em>
                   </li>
                   <li>
-                    <span>2024 / Projet React - App Clone Amazon</span>
-                    <br /> Stack technique : React / Redux / Styled-Components /
-                    Git / Vercel
+                    <span>2024 / App Clone Amazon</span>
+                    <br />{" "}
+                    <em>
+                      Stack technique : React / Redux / Styled-Components / Git
+                      / Vercel
+                    </em>
                   </li>
                   <li>
-                    <span>2023 / Projet React - App Crypto Market</span>
-                    <br /> Stack technique : React / Redux / SCSS / Netlify
+                    <span>2023 / App Crypto Market</span>
+                    <br />{" "}
+                    <em>Stack technique : React / Redux / SCSS / Netlify</em>
                   </li>
                   <li>
                     <span>2021 - 2023 / Alternance Webmaster, Orange</span>
-                    <br /> Stack technique : CMS Moringa, Javascript, HTML, CSS
+                    <br />{" "}
+                    <em>
+                      Stack technique : CMS Moringa, Javascript, HTML, CSS
+                    </em>
                   </li>
                 </ul>
               )}
@@ -101,9 +112,11 @@ export default function About() {
                       2023 - Master Degree in IT at Paris School of Business{" "}
                     </span>
                     <br />
-                    Matières : Javascript / PHP / Scrum / SEO Search Engine
-                    Optimization / Wordpress / Google Analytics + Certification
-                    Google Analytics / SQL
+                    <em>
+                      Subject : Javascript / PHP / Scrum / SEO Search Engine
+                      Optimization / Wordpress / Google Analytics +
+                      Certification Google Analytics / SQL
+                    </em>
                   </li>
                   <li>
                     <span>2018 - Science Baccalaureate</span>
@@ -121,18 +134,23 @@ export default function About() {
 const AboutStyled = styled.div`
   .about {
     padding: 30px 10%;
+    color: #ecebe7;
+
     .row {
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @media screen and (max-width: 750px) {
+        display: block;
+      }
 
       .col-1 {
-        border: 1px solid purple;
         flex-basis: 35%;
         height: 100%;
         @media screen and (max-width: 750px) {
           visibility: hidden;
+          height: 0;
         }
 
         img {
@@ -141,19 +159,20 @@ const AboutStyled = styled.div`
         }
       }
       .col-2 {
-        border: 1px solid pink;
         flex-basis: 60%;
 
         @media screen and (max-width: 750px) {
           width: 100%;
         }
         .sub-title {
-          font-size: 42px;
+          font-size: 50px;
           margin-bottom: 15px;
+          font-family: "Rastefani";
+          font-weight: 500;
         }
         .tab-titles {
           display: flex;
-          margin: 20px 0 40px;
+          margin: 30px 0 25px;
 
           .tab-links {
             margin-right: 50px;
@@ -166,7 +185,7 @@ const AboutStyled = styled.div`
               content: "";
               height: 2px;
               width: 0;
-              background: #3d4143;
+              background: #aa800b;
               position: absolute;
               bottom: -6px;
               left: 0;
@@ -186,6 +205,7 @@ const AboutStyled = styled.div`
         }
         .tab-contents ul li span {
           font-weight: 500;
+          color: #aa800b;
         }
       }
     }

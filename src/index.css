@@ -5,11 +5,17 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Rastefani';
+  src: url('../src/fonts/Rastefani-BF65f550db0b931.otf') format('opentype');
+  
+}
+
 body {
-  background: #F5F5F7;
-  color: #3D4143;
+  background: #24282B ;
+  color: #F7F7F7;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Moret',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

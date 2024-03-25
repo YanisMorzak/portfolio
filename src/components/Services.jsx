@@ -12,33 +12,32 @@ export default function Services() {
             <h2>Web development</h2>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores saepe soluta sed non, vel nobis magnam architecto.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores saepe soluta sed non, vel nobis magnam architecto.
+              My experience in creating dynamic and responsive user interfaces
+              enables me to transform creative concepts into functional and
+              aesthetic digital products, delivering an exceptional user
+              experience.
             </p>
             <a
               href="https://github.com/YanisMorzak?tab=repositories"
               target="_blank"
             >
-              Learn More
+              View My GitHub
             </a>
           </div>
           <div>
             <i className="fa-solid fa-crop-simple"></i>
-            <h2>Web Design</h2>
+            <h2>UX/UI</h2>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores saepe soluta sed non, vel nobis magnam architecto.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores saepe soluta sed non, vel nobis magnam architecto.
+              As a developer, I value precision and alignment with mock-ups,
+              ensuring faithful implementation of the design. I'm also able to
+              create mock-ups that meet customer expectations.
             </p>
             <a
               href="https://github.com/YanisMorzak?tab=repositories"
               target="_blank"
             >
-              Learn More
+              View My GitHub
             </a>
           </div>
           <div>
@@ -46,16 +45,15 @@ export default function Services() {
             <h2>Acquisition</h2>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores saepe soluta sed non, vel nobis magnam architecto.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores saepe soluta sed non, vel nobis magnam architecto.
+              Thanks to my solid understanding of Search Engine Optimization
+              (SEO) principles, I'm able to effectively optimize the content and
+              structure to improve their visibility in search results.
             </p>
             <a
               href="https://github.com/YanisMorzak?tab=repositories"
               target="_blank"
             >
-              Learn More
+              View My GitHub
             </a>
           </div>
         </div>
@@ -66,10 +64,16 @@ export default function Services() {
 
 const ServicesStyled = styled.div`
   padding: 0 10%;
+  margin-top: 15px;
+  color: #ecebe7;
+
   .title-services {
-    font-size: 42px;
+    font-size: 50px;
+    font-family: "Rastefani";
+    font-weight: 500;
   }
   .services-list {
+    color: #ecebe7;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
     grid-gap: 40px;
@@ -84,7 +88,6 @@ const ServicesStyled = styled.div`
     div {
       background: #3d4143;
       border: 1px solid #3d4143;
-      color: white;
       padding: 30px;
       border-radius: 10px;
       font-weight: 300;

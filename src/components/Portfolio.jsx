@@ -8,38 +8,38 @@ export default function Portfolio() {
         <h1 className="title-work">My Work</h1>
         <div className="work-list">
           <div className="work">
-            <img src="/image/work-1.png" />
+            <img src="/image/tasty-burger-work.png" />
             <div className="layer">
               <h3>Tasty App</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi et veritatis sapiente facere.
+                A culinary application offering a wide range of functions, with
+                an admin mode that lets you add, modify or delete any product.
               </p>
-              <a href="">
+              <a href="https://tasty-burger-tau.vercel.app/" target="_blank">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
           <div className="work">
-            <img src="/image/work-2.png" />
+            <img src="/image/amz-clo-work.png" />
             <div className="layer">
               <h3>Clone Amazon App</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi et veritatis sapiente facere.
-              </p>
-              <a href="">
+              <p>Amazon clone reconstructing visitors' path to purchase.</p>
+              <a
+                href="https://amazon-clone-ashen-six-24.vercel.app/"
+                target="_blank"
+              >
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
           <div className="work">
-            <img src="/image/work-3.png" />
+            <img src="/image/crp-img-work.png" />
             <div className="layer">
               <h3>Crypto Market App</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi et veritatis sapiente facere.
+                Responsive application showing an overview of the
+                crypto-currency market through various metrics.
               </p>
               <a
                 href="https://main--crypto-app-market.netlify.app/"
@@ -58,8 +58,11 @@ export default function Portfolio() {
 const PortfolioStyled = styled.div`
   padding: 50px 10%;
   .title-work {
-    font-size: 42px;
+    color: #ecebe7;
+    font-size: 50px;
     margin-bottom: 20px;
+    font-family: "Rastefani";
+    font-weight: 500;
   }
   .work-list {
     display: grid;
@@ -99,8 +102,12 @@ const PortfolioStyled = styled.div`
         transition: height 0.5s;
 
         h3 {
+          font-size: 21px;
           font-weight: 500;
           margin: 20px 0;
+        }
+        p {
+          font-size: 16px;
         }
         a {
           margin-top: 20px;
