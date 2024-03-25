@@ -9,7 +9,7 @@ export default function Header() {
         <h1 className="title">
           Hi, I'm <span className="name">Yanis</span>
         </h1>
-        <a href="/image/CV_YANIS_MORZAK.pdf" download className="btn-contact">
+        <a href="/image/CV_Yanis.pdf" download className="btn-contact">
           Download CV
         </a>
       </div>

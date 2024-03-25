@@ -60,11 +60,7 @@ export default function Contact() {
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
-            <a
-              href="/image/CV_YANIS_MORZAK.pdf"
-              download
-              className="btn-contact"
-            >
+            <a href="/image/CV_Yanis.pdf" download className="btn-contact">
               Download CV
             </a>
           </div>
