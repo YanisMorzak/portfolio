@@ -15,7 +15,7 @@ export default function Portfolio() {
                 A culinary application offering a wide range of functions, with
                 an admin mode that lets you add, modify or delete any product.
               </p>
-              <a href="">
+              <a href="https://tasty-burger-tau.vercel.app/" target="_blank">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -26,7 +26,7 @@ export default function Portfolio() {
               <h3>Clone Amazon App</h3>
               <p>Amazon clone reconstructing visitors' path to purchase.</p>
               <a
-                href="https://amazon-clone-yanismorzak-yanis-projects-cb43cffb.vercel.app?_vercel_share=i2XE7n1xJfA94Kqd556sTx76icUe39kz"
+                href="https://amazon-clone-ashen-six-24.vercel.app/"
                 target="_blank"
               >
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
